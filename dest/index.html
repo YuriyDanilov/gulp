@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- <script src="../node_modules/jquery/dist/jquery.js"></script> -->
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="title">
+            <p>my phone book</p>
+            <button class="btn btn-exit">Exit</button>
+        </div>
+        <div class="container flex">
+            <div class="register">
+                <h2>
+                    registration
+                </h2>
+                <form id="reg-form">
+                    <div class="form-control">
+                        <input type="text" class="input" id="login-reg" placeholder="Login">
+                    </div>
+
+                    <div class="form-control">
+                        <input type="text" class="input" id="date_born-reg" placeholder="Birth date">
+                    </div>
+
+                    <div class="form-control">
+                        <input type="password" class="input" id="password-reg" placeholder="Password">
+                    </div>
+
+                    <div class="form-control btn-pos">
+                        <button class="btn btn-reg">register</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="login">
+                <h2>
+                    login
+                </h2>
+                <form id="log-form">
+                    <div class="form-control">
+                        <input name="login" type="text" class="input" id="login-log" placeholder="Login">
+                    </div>
+
+                    <div class="form-control">
+                        <input name="password" type="password" class="input" id="password-log" placeholder="Password">
+                    </div>
+
+                    <div class="form-control btn-pos">
+                        <button class="btn btn-login">login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="contacts flex">
+            <div class="contacts-info">
+                <form id="form-cont">
+                    <div class="form-control">
+                        <label for="name">Name:</label>
+                        <input type="text" class="input" id="name">
+                    </div>
+
+                    <div class="form-control">
+                        <label for="type">Phone/e-mail:</label>
+                        <select class="input" id="type">
+                            <option>phone</option>
+                            <option>email</option>
+                        </select>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="value">Contact:</label>
+                        <input type="email" class="input" id="value">
+                    </div>
+
+                    <div class="form-control btn-pos">
+                        <button id="add-cont" class="btn btn-login">Add contact</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="contacts-list">
+            </div>
+
+            <div class="contacts-show">
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>
